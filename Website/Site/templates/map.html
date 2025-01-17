@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+  <div>
+    <h2>Das Gelände</h2><br />
+    <h3>Willkommen auf unserem „Ambush Site“-Gelände.</h3><br />
+    <p>Als Verein haben wir uns einen ehemaligen Trapschießplatz gepachtet. Durch die nette Unterstützung unseres ortsansässigen Verpächters, der Containerdienst Pfaffe GmbH konnten wir aus dem Schießstand ein kleines Airsoft-Gelände machen.</p>
+    <p>Das Gelände zeichnet sich durch eine gute Infrastruktur aus. So sind feste Sanitäranlagen vorhanden und die Versorgung ist durch den in unmittelbarer Nähe befindlichen REWE- Supermarkt gesichert.</p>
+    <p>Für HPA-Spieler gibt es einen Hochdruck-Kompressor zum auffüllen der Flaschen.</p>
+    <p>Einem spielreichen Wochenende steht so nichts mehr im Wege.</p>
+    <br />
+    <h3>2019</h3><br />
+    <button onclick="loadImg('37')" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#img-modal"><img src="{% static 'img/37-min.jpg' %}" alt="Ladefehler" class="c-btn-img" /></button><br /><br />
+    <h3>Heute</h3><br />
+    <button onclick="loadImg('34')" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#img-modal"><img src="{% static 'img/34-min.jpg' %}" alt="Ladefehler" class="c-btn-img" /></button><br /><br />
+    <h3>Szenario:</h3><br />
+    <button onclick="loadImg('24')" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#img-modal"><img src="{% static 'img/24-min.jpg' %}" alt="Ladefehler" class="c-btn-img" /></button><br /><br />
+    <p>Ein kleiner Konvoi nicht gekennzeichneter Fahrzeuge ist in einem kleinen Dorf liegen geblieben...</p><br />
+    <h3>Geländetyp:</h3>
+    <p>Urban/CQB</p><br />
+    <h3>Spielmodi</h3>
+    <ul>
+      <li>Team-Deathmatch</li>
+      <li>Konvoi</li>
+      <li>Geisel retten</li>
+      <li>Capture the Flag</li>
+      <li>Suche und Zerstörung</li>
+      <li>Domination</li>
+    </ul><br />
+    <dl>
+      <dt>
+        <h3>Wegbeschreibung:</h3>
+      </dt>
+      <dd>
+        <div class="container-fluid c-cookie-div">
+          <div class="layer1">
+            <p style="font-weight: bold;">Um diese Inhalte zu Laden müssen die Verwendeten Cookies akzeptiert werden.</p>
+          </div>
+          <div class="layer2" style="margin-left: -99.7%;">
+            <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.8058579089848!2d11.241834577153034!3d51.069171042622074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a4170074961ad5%3A0xdce8c40550045229!2sAirsoft%20Scorpions!5e1!3m2!1sde!2sde!4v1733746138589!5m2!1sde!2sde" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" data-cookiescript="accepted" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </dd>
+    </dl>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="img-modal" tabindex="-1" aria-labelledby="imgmodalLabel" aria-hidden="true" style="width: 100%;">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body" id="img-modal">
+          <img class="w-100" src="#" alt="Ladefehler" />
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

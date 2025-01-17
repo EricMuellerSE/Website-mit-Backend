@@ -1,0 +1,69 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+
+{% block content %}
+  <div>
+    <h2>Home</h2><br />
+    <h3>Wer sind die Airsoft Scorpions Jena e.V.</h3>
+    <p>Die „Airsoft Scorpions Jena“ (kurz *ASJ*) sind ein „kleines“ Team, aus dem schönen Thüringen. Unser Verein hat sich 2019, aus einem kleinem Haufen Airsoft verrückter, gegründet.</p>
+    <p>Mittlerweile haben wir 50+ Mitglieder – diese kommen aus Jena, Weimar, Erfurt und Umgebung.</p><br />
+    <button onclick="loadImg('01')" type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#img-modal"><img src="{% static 'img/01-min.jpg' %}" alt="Ladefehler" class="c-btn-img" /></button>
+    <br /><br /><br />
+    <h3>Aktivitäten</h3>
+    <p>Wir sind ein sehr aktives Team...</p>
+    <ul>
+      <li>am 1. Samstag im Monat ist „Teamtag“ < interner Tag für unsere Mitglieder</li>
+      <li>am 3. Samstag im Monat ist „Offener Spieltag“ < Anmeldungen über das ASVZ</li>
+      <li>zusätzliche Arbeitseinsätze auf unserem Gelände - je nach Bedarf</li>
+      <li>ab und zu trifft man uns auch als großes Team, auf Veranstaltungen anderer Airsoft-Gruppen</li>
+    </ul>
+
+    <button class="btn btn-secondary"><a href="/kalender" class="text-decoration-none light">Zum Teamkalender --></a></button><br /><br />
+
+    <h3>Ziele des Vereins</h3>
+    <ul>
+      <li>jedem Interessierten die Möglichkeit zu geben, den Airsoftsport zusammen mit Gleichgesinnten auszuüben</li>
+      <li>über den Sport an sich und über den sicheren Umgang mit Airsoftwaffen zu informieren</li>
+    </ul>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="img-modal" tabindex="-1" aria-labelledby="imgmodalLabel" aria-hidden="true" style="width: 100%;">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body" id="img-modal">
+          <img class="w-100" src="#" alt="Ladefehler" />
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block kommentare %}
+  <div class="kommentar-carusell">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <div class="carousel-inner">
+        {% for x in comments %}
+        {% if forloop.first %}
+        <div class="carousel-item active">
+        {% else %}
+        <div class="carousel-item">
+        {% endif %}
+          <div class="d-block w-100">
+            <h3 style="text-align: center;">{{x.player}}</h3>
+            <p style="text-align: center;">{{x.comment}}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+{% endblock %}

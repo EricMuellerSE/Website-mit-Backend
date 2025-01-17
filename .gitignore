@@ -1,0 +1,15 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+
+include
+Lib
+Scripts
+pyvenv.cfg
+Website/productionfiles/admin
+**/__pycache__
+Website/Site/migrations/0001_initial.py
+Website/Site/tests.py
+Website/Site/admin.py
+
+# py -m venv [VEnvName] ../Website (ProjectRoot)
+# py manage.py makemigrations Site
+# py manage.py migrate

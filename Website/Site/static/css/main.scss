@@ -1,0 +1,409 @@
+// Include any default variable overrides here (though functions won't be available)
+
+$primary: #495746;
+$secondary: #6a7283;
+$body-bg: #d8dade;
+$accordion-btn-icon: white;
+$modal-xl: 80%;
+$input-group-addon-bg: $primary;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "Bellaboo";
+  src: url(../fonts/bellaboo-1.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "FSP DEMO - Zuume Rough";
+  src: url(../fonts/zuume-rough-bold.ttf) format("truetype");
+}
+
+
+// Then add additional custom code here
+
+//Allgemein
+.row {
+  --bs-gutter-x: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+//Texte
+h2 {
+  font-weight: bold;
+  color: var(--bs-body-color);
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: bold;
+  color: var(--bs-secondary-color);
+}
+
+p {
+  color: var(--bs-body-color);
+  font-size: 1.25rem !important;
+}
+
+ul li {
+  font-size: 1.25rem;
+}
+
+//Darkmode & Theme-Switch
+.darkmode {
+  --bs-secondary-color: #a6b1a3;
+  --bs-body-color: #d8dade;
+  --bs-body-bg: #212121;
+}
+
+.theme-switch {
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-width: 2px;
+  font-size: 20px;
+  float: right;
+  position: absolute;
+  top: 35%;
+  right: 1.5%;
+}
+
+#theme-switch-strich {
+  font-size: 25px;
+  margin-top: 8px;
+  color: var(--nav-text-color);
+}
+
+
+@media (max-width: 576px) {
+  .c-nav-heading {
+    font-size: medium;
+  }
+}
+
+
+// Layout (Navbar & Banner & Impressum)
+@media (max-width: 1450px) {
+  .map-img {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+.c-nav-heading {
+  color: var(--bs-light);
+}
+
+.c-nav-navs * {
+  color: var(--bs-light) !important;
+  font-size: 24px !important;
+}
+
+.c-btn-img {
+  width: 50% !important;
+}
+
+@media (max-width: 1500px) {
+
+  #left-banner,
+  #right-banner {
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  #top-banner {
+    height: auto !important;
+    width: 80% !important;
+    margin-left: 10%;
+  }
+
+  .c-btn-img {
+    width: 100% !important;
+  }
+}
+
+.side-banner {
+  position: sticky !important;
+  top: 9rem;
+}
+
+.c-mt-imp {
+  margin-top: 10rem;
+}
+
+//Galierie
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.c-downloads table tr td {
+  color: var(--bs-body-color);
+}
+
+.c-kalender-btn {
+  width: 25rem;
+}
+
+@media screen and (max-width: 650px) {
+  .c-kalender-btn {
+    width: 100%;
+  }
+}
+
+.kommentar-btn {
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-width: 2px;
+  font-size: 20px;
+  float: right;
+  position: absolute;
+  top: 35%;
+  right: 4%;
+}
+
+@media screen and (max-width: 1199px) {
+  .kommentar-btn {
+    top: 90%;
+    right: 10%;
+  }
+
+  .theme-switch {
+    top: 90%;
+  }
+}
+
+.kommentar-carusell {
+  margin-top: 5rem;
+  padding: 2rem;
+  border: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.welcome-message {
+  font-family: "Bellaboo", serif;
+  color: var(--bs-light);
+  transform: rotate(-10deg);
+  text-align: center;
+  margin-right: -5rem;
+  margin-bottom: 8rem;
+  margin-top: 0rem;
+  font-size: 3vw !important;
+  line-height: 1 !important;
+}
+
+.title-header {
+  font-size: 9vw !important;
+  font-family: "FSP DEMO - Zuume Rough", serif;
+  margin-bottom: 0;
+}
+
+.logo-header {
+  width: 15vw;
+  margin-left: 1rem;
+  margin-top: -3rem;
+}
+
+.c-nav-bar {
+  background-color: var(--bs-primary);
+  height: 10rem;
+}
+
+
+@media screen and (min-width: 900px) {
+  .welcome-message {
+    font-family: "Bellaboo", serif;
+    color: var(--bs-light);
+    transform: rotate(-10deg);
+    text-align: center;
+    margin-right: -5rem;
+    margin-bottom: 8rem;
+    margin-top: 0rem;
+    font-size: 27px !important;
+    line-height: 1 !important;
+  }
+  
+  .title-header {
+    font-size: 81px !important;
+    font-family: "FSP DEMO - Zuume Rough", serif;
+    margin-bottom: 0;
+  }
+  
+  .logo-header {
+    width: 135px;
+    margin-left: 1rem;
+    margin-top: -3rem;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  .welcome-message {
+    font-family: "Bellaboo", serif;
+    color: var(--bs-light);
+    transform: rotate(-10deg);
+    text-align: center;
+    margin-right: -5rem;
+    margin-bottom: 8rem;
+    margin-top: 0rem;
+    font-size: 12px !important;
+    line-height: 1 !important;
+  }
+  
+  .title-header {
+    font-size: 7vw !important;
+    font-family: "FSP DEMO - Zuume Rough", serif;
+    margin-bottom: 50px;
+  }
+
+  
+  .logo-header {
+    width: 60px;
+    margin-left: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .c-nav-bar {
+    background-color: var(--bs-primary);
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  .welcome-message {
+    font-family: "Bellaboo", serif;
+    color: var(--bs-light);
+    transform: rotate(-10deg);
+    text-align: center;
+    margin-right: -5rem;
+    margin-bottom: 8rem;
+    margin-top: 0rem;
+    font-size: 0vw !important;
+    line-height: 1 !important;
+  }
+  
+  .title-header {
+    font-size: 7vw !important;
+    font-family: "FSP DEMO - Zuume Rough", serif;
+    margin-bottom: 100px;
+  }
+
+  .logo-header {
+    width: 0vw;
+    margin-left: 0rem;
+    margin-bottom: 30px;
+  }
+
+  .c-nav-bar {
+    background-color: var(--bs-primary);
+    height: 3rem;
+  }
+}
+
+.c-impressum {
+  font-family: "FSP DEMO - Zuume Rough", serif;
+  font-size: 3rem;
+  text-decoration: underline var(--bs-primary);
+  margin: 0;
+}
+
+.light {
+  color: var(--bs-light) !important;
+}
+
+#cookiescript_accept {
+  color: black !important;
+}
+
+.nav-link {
+  margin-left: 10px;
+}
+
+.sm-icons{
+  width: 5rem;
+}
+
+.c-logo-contact{
+  width: 250px;
+}
+
+@media screen and (max-width: 540px) {
+  .c-logo-contact{
+    width: 0;
+  }
+}
+
+.layer1{
+  width: 100%;
+}
+
+.layer1 p{
+  color : black !important;
+}
+
+.layer2{
+  width: 100%;
+  margin-left: -101%;
+}
+
+.c-cookie-div{
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  width: 1249;
+}

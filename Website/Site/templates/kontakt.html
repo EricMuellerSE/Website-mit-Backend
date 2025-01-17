@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+  <div>
+    <h2>Kontakt</h2><br />
+    <dl>
+      <dt>
+        <h3>Adresse:</h3>
+      </dt>
+      <dd>
+        <table class="w-100">
+          <tr>
+            <td>
+              <p>
+                Airsoft Scorpions Jena e.V. <br />
+                c/o Paul Hopfgarten <br />
+                Ottmannshausen 36 B <br />
+                99439 Am Ettersberg
+              </p>
+            </td>
+            <td style="text-align: center;">
+              <img src="{% static 'img/logo-min.png' %}" alt="Ladefehler" class="c-logo-contact" />
+            </td>
+          </tr>
+        </table>
+
+        <br />
+      </dd>
+      <dt>
+        <h3>Telefon:</h3>
+      </dt>
+      <dd><a href="tel:+49 15679577325" style="font-size: 1.3rem;">+49 15679577325</a></dd><br />
+      <dt>
+        <h3>EMail:</h3>
+      </dt>
+      <dd>
+        <p>
+          <a href="mailto:scorpionsjena@gmail.com">scorpionsjena@gmail.com</a>
+        </p>
+      </dd><br />
+      <dt>
+        <h3>Wegbeschreibung:</h3>
+        <p>Um den Inhalt anzuzeigen müssen die verwendeten Cookies akzeptiert werden.</p>
+      </dt>
+      <dd>
+        <div class="container-fluid c-cookie-div">
+          <div class="layer1">
+            <p style="font-weight: bold;">Um diese Inhalte zu Laden müssen die Verwendeten Cookies akzeptiert werden.</p>
+          </div>
+          <div class="layer2" style="margin-left: -99.7%;">
+            <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.8058579089848!2d11.241834577153034!3d51.069171042622074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a4170074961ad5%3A0xdce8c40550045229!2sAirsoft%20Scorpions!5e1!3m2!1sde!2sde!4v1733746138589!5m2!1sde!2sde" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" data-cookiescript="accepted" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </dd>
+
+      <h3>Social Media:</h3>
+
+      <div class="row">
+        <div class="col-lg">
+          <button class="btn w-100"><a href="https://www.instagram.com/airsoftscorpions" target="_blank"><img class="sm-icons" src="{% static 'img/insta-logo-min.png' %}" alt="Ladefehler" style="height: 5rem;" /></a></button>
+        </div>
+        <div class="col-lg">
+          <button class="btn w-100"><a href="https://www.facebook.com/AirsoftScorpionsJena" target="_blank"><img class="sm-icons" src="{% static 'img/facebook-logo-min.png' %}" alt="Ladefehler" style="height: 5rem;" /></a></button>
+        </div>
+        <div class="col-lg">
+          <button class="btn w-100"><a href="https://www.youtube.com/@AirsoftScorpions" target="_blank"><img class="sm-icons" src="{% static 'img/yt-logo-min.png' %}" alt="Ladefehler" style="height: 5rem;" /></a></button>
+        </div>
+        <div class="col-lg">
+          <button class="btn w-100"><a href="https://discord.gg" target="_blank"><img class="sm-icons" src="{% static 'img/discord-logo-min.png' %}" alt="Ladefehler" style="height: 5rem;" /></a></button>
+        </div>
+      </div>
+    </dl>
+  </div>
+{% endblock %}
