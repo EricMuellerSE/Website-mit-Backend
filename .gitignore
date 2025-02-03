@@ -13,3 +13,10 @@ Website/Site/admin.py
 # py -m venv [VEnvName] ../Website (ProjectRoot)
 # py manage.py makemigrations Site
 # py manage.py migrate
+# py manage.py collectstatic
+
+# python version 3.13.1
+
+# Django Version 5.5.1
+
+# Pip version 24.3.1
