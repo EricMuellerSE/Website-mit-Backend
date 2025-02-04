@@ -94,10 +94,18 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalTitleId">Kommentar hinzufügen (Noch ohne Funktion!)</h5>
+            <h5 class="modal-title" id="modalTitleId">Kommentar hinzufügen</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <form action="/home/" method="post">
+          
+          <form action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" class="btn btn-primary" value="Speichern">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+          </form>
+          
+          {% comment %} <form action="/home/" method="post">
             <div class="modal-body">
               <div class="input-group flex-nowrap">
                 <span class="input-group-text light" id="addon-wrapping" style="width: 7rem;">Spielername:</span>
@@ -112,7 +120,7 @@
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
               <input type="submit" value="Speichern" class="btn btn-primary" data-bs-dismiss="modal"/>
             </div>
-          </form>
+          </form> {% endcomment %}
         </div>
       </div>
     </div>

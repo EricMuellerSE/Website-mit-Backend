@@ -81,4 +81,18 @@
     <p>>>> Ausnahme: Unsere Einverständniserklärung U18 (der sog. "Muttizettel") - diese bitte zu Hause ausdrucken, ausfüllen und zum Spieltag mitbringen!!!</p>
     <p>Mit deiner Unterschrift an unseren Spieltagen, verpflichtest du dich die jeweils aktuellen Stände unseres Regelwerkes zu kennen...</p>
   </div>
+
+  <br>
+  <button onclick="loadImg('02')" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#img-modal"><img src="{% static 'img/02.jpg' %}" alt="Ladefehler" class="w-75" /></button><br /><br />
+
+  <!-- Modal -->
+  <div class="modal fade" id="img-modal" tabindex="-1" aria-labelledby="imgmodalLabel" aria-hidden="true" style="width: 100%;">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body" id="img-modal">
+          <img class="w-100" src="#" alt="Ladefehler" />
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

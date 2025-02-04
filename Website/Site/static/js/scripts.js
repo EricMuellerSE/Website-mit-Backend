@@ -37,7 +37,7 @@ function loadImg(num) {
     `<div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body" id="img-modal">
-              <img class="w-100" src="../static/img/${num}-min.jpg" alt="Ladefehler">
+              <img class="w-100" src="../static/img/${num}.jpg" alt="Ladefehler">
             </div>
           </div>
         </div>`

@@ -1,3 +1,6 @@
+
+# URLs sind dafür zuständig die richtigen views für die jeweilige URL Abfrage zu Laden
+
 from django.urls import path
 from . import views
 

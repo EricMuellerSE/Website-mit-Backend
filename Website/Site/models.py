@@ -1,3 +1,6 @@
+
+# Models sind ind DJango die Datenbanken basierend auf SQLite3
+
 from django.db import models
 
 class Kommentare(models.Model):

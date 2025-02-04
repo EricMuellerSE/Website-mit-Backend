@@ -59,5 +59,19 @@
         </td>
       </tr>
     </table>
+    <br />
+    
+    <button onclick="loadImg('05')" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#img-modal"><img src="{% static 'img/05.jpg' %}" alt="Ladefehler" class="w-100" /></button><br /><br />
+
+    <!-- Modal -->
+    <div class="modal fade" id="img-modal" tabindex="-1" aria-labelledby="imgmodalLabel" aria-hidden="true" style="width: 100%;">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body" id="img-modal">
+            <img class="w-100" src="#" alt="Ladefehler" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock %}
