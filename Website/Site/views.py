@@ -7,6 +7,7 @@ from django.template import loader
 from django.http import HttpResponse
 from .models import Kommentare
 from .forms import KommentareForm
+from .bw import badwords
 
 # Home
 def home(request):
@@ -17,6 +18,13 @@ def home(request):
     if form.is_valid():
       form.save()
       return redirect("/home/")
+  
+  for i in Kommentare.objects.all():
+      for badword in badwords:
+        if badword in i.comment or badword in i.player:
+          i.delete()
+          break
+
 
   comments = Kommentare.objects.all().values()
   template = loader.get_template('home.html')
