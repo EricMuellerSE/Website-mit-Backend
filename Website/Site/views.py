@@ -21,7 +21,7 @@ def home(request):
   
   for i in Kommentare.objects.all():
       for badword in badwords:
-        if badword in i.comment or badword in i.player:
+        if badword in i.comment.lower() or badword in i.player.lower():
           i.delete()
           break
 
