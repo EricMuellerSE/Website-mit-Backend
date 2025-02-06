@@ -95,38 +95,25 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="modalTitleId">Kommentar hinzufügen</h5>
+            <button class="btn btn-secondary mx-2 px-2" style="border-radius: 50%;" data-bs-toggle="popover" title="Hinweis:" data-bs-content="Bei eingabe von unangebrachten Inhalten wir der Kommentar nicht gespeichert!"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M424-320q0-81 14.5-116.5T500-514q41-36 62.5-62.5T584-637q0-41-27.5-68T480-732q-51 0-77.5 31T365-638l-103-44q21-64 77-111t141-47q105 0 161.5 58.5T698-641q0 50-21.5 85.5T609-475q-49 47-59.5 71.5T539-320H424Zm56 240q-33 0-56.5-23.5T400-160q0-33 23.5-56.5T480-240q33 0 56.5 23.5T560-160q0 33-23.5 56.5T480-80Z"/></svg></button>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          
-          <form action="" method="post">
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit" class="btn btn-primary" value="Speichern">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
-          </form>
-          
-          {% comment %} <form action="/home/" method="post">
-            <div class="modal-body">
-              <div class="input-group flex-nowrap">
-                <span class="input-group-text light" id="addon-wrapping" style="width: 7rem;">Spielername:</span>
-                <input id="playername" value="{{cuurent_name}}" type="text" class="form-control" placeholder="Spielername" aria-label="Spielername:" aria-describedby="addon-wrapping"/>
-              </div>
-              <div class="input-group mt-3">
-                <span class="input-group-text light" style="width: 7rem; text-align: center;">Kommentar:</span>
-                <textarea id="commentInput" type="text" class="form-control" placeholder="Kommentar" aria-label="With textarea"></textarea>
-              </div>
-            </div>
-            <div class="modal-footer">
+          <div class="modal-body">          
+            <form action="" method="post">
+              {% csrf_token %}
+              {{ form }}
+              <input type="submit" class="btn btn-primary mx-2 my-2" value="Speichern">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
-              <input type="submit" value="Speichern" class="btn btn-primary" data-bs-dismiss="modal"/>
-            </div>
-          </form> {% endcomment %}
+            </form>
+          </div>
         </div>
       </div>
     </div>
     <!-- Optional: Place to the bottom of scripts -->
     <script>
       const myModal = new bootstrap.Modal(document.getElementById('komentar-modal'))
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     </script>
   </header>
 
