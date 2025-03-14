@@ -1,10 +1,72 @@
-# Website-mit-backend
+<h1 align="center" id="title">Website ASJ</h1>
 
-## Installation Guide
+<p id="description">Website für die Airsoft Scorpions Jena e.V.</p>
 
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Kommentare
+*   Admin-View
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone Gitrepo</p>
+
+```
 $ git clone
+```
+
+<p>2. Install Requirements</p>
+
+```
 $ pip install -r ./Website/Website/requirements.txt
+```
+
+<p>3. goto Website</p>
+
+```
 $ cd Website
+```
+
+<p>4. Make Migrations</p>
+
+```
 $ py manage.py makemigrations
-$ py manage.py migrate
+```
+
+<p>5. Migrate</p>
+
+```
+py manage.py migrate
+```
+
+<p>6. Runseerver for everywone</p>
+
+```
 $ py manage.py runserver 0.0.0.0:8000
+```
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Django
+*   HTML
+*   CSS
+*   SCSS
+*   Bootstrap
+*   Python
+*   JavaScript
+
+<h2>🛡️ License:</h2>
+
+This project is licensed under the Nothing
+
+<h2>💖Like my work?</h2>
+
+Ansprechparthner: Eric Müller<p>TEL.: +49 1575 2047095</p>
