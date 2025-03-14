@@ -63,10 +63,6 @@ Technologies used in the project:
 *   Python
 *   JavaScript
 
-<h2>🛡️ License:</h2>
-
-This project is licensed under the Nothing
-
-<h2>💖Like my work?</h2>
+<h2>Suport</h2>
 
 Ansprechparthner: Eric Müller<p>TEL.: +49 1575 2047095</p>
