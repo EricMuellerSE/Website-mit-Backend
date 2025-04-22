@@ -22,7 +22,7 @@ $ git clone
 <p>2. Install Requirements</p>
 
 ```
-$ pip install -r ./Website/Website/requirements.txt
+$ pip install -r ./Website/requirements.txt
 ```
 
 <p>3. goto Website</p>
