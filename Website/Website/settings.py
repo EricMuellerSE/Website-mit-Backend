@@ -27,11 +27,13 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-SESSION_COOKIE_SECURE = True
 
-CSRF_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
 
-SECURE_SSL_REDIRECT = True
+# CSRF_COOKIE_SECURE = True
+
+# SECURE_SSL_REDIRECT = True
+
 
 # Application definition
 
