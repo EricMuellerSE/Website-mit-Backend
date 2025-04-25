@@ -17,7 +17,7 @@ def home(request):
     form = KommentareForm(request.POST)
     if form.is_valid():
       form.save()
-      return redirect("/home/")
+      return redirect("/")
   
   for i in Kommentare.objects.all():
       for badword in badwords:
