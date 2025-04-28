@@ -69,12 +69,6 @@ Ansprechparthner: Eric Müller<p>TEL.: +49 1575 2047095</p>
 
 <h2>Deployment</h2>
 
-Natürlich! Hier ist die Zusammenfassung erneut – diesmal ohne den Punkt "Endergebnis":
-
-—
-
-# Zusammenfassung – Schritt für Schritt
-
 🔹 1. Notwendige Pakete installiert
 
 Damit Nginx und Certbot funktionieren, haben wir folgende Pakete installiert:
@@ -88,8 +82,6 @@ sudo apt install certbot python3-certbot-nginx
 —
 
 🔹 2. Nginx Serverblöcke für HTTPS und HTTP-Weiterleitung erstellt
-
-**Kompletter Server-Block-Code:**
 
 ```nginx
 server {
@@ -154,8 +146,3 @@ sudo systemctl reload nginx
 
 - Cache und Cookies für `example.com` gelöscht
 - Seite neu geladen oder im Inkognito-Modus getestet
-
-—
-
-Willst du jetzt noch, dass ich daraus ein fertiges Bash-Skript erstelle, das den gesamten Ablauf automatisch ausführt? 🚀  
-(Wäre super praktisch für spätere Setups.)
