@@ -83,10 +83,9 @@ sudo apt install certbot python3-certbot-nginx
 
 🔹 2. Nginx Serverblöcke für HTTPS und HTTP-Weiterleitung erstellt
 
+Path: ``` /etc/nginx/sites-available/daphne ```
+
 ```nginx
-server {
-    listen 80;
-    server_name example.com;
 
     return 301 https://$host$request_uri;
 }
