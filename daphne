@@ -1,9 +1,9 @@
 server {
     listen 443 ssl;
-    server_name test-em-asj-django.fun;
+    server_name airsoft-scorpions-jena.de;
  
-    ssl_certificate     /etc/letsencrypt/live/test-em-asj-django.fun/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/test-em-asj-django.fun/privkey.pem;
+    ssl_certificate     /etc/letsencrypt/live/airsoft-scorpions-jena.de/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/airsoft-scorpions-jena.de/privkey.pem;
  
     location / {
         proxy_pass http://127.0.0.1:8001;
