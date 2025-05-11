@@ -23,5 +23,5 @@ class KommentareForm(forms.ModelForm):
         }
         labels = {
             'player': 'Spielername',
-            'comment': 'Kommetar',
+            'comment': 'Kommentar',
         }
