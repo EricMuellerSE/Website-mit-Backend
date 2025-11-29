@@ -437,5 +437,20 @@ badwords = [
     'yellow showers',
     'yiffy',
     'zoophilia',
-    '🖕'
+    '🖕',
+    'https://',
+    'http://',
+    '.de',
+    '.com',
+    '.org',
+    '.gb',
+    '.us',
+    '.ly',
+    '.at',
+    '.ch',
+    '.info',
+    '.es',
+    '.ph',
+    '.can',
+    '.fr'
 ]
